@@ -13,6 +13,7 @@ export class HomePage {
 
   NewMethod(){
     //bqweæfkenoer
+    //Nyædsn
   }
 
 }
