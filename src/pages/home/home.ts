@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DbPage } from "../db/db";
+import { DbmeterPage } from "../dbmeter/dbmeter";
 
 @Component({
   selector: 'page-home',
@@ -12,7 +12,7 @@ export class HomePage {
   }
 
   DbMeter(){
-    this.navCtrl.push(DbPage); 
+    this.navCtrl.push(DbmeterPage); 
   }
 
 }
