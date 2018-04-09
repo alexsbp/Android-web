@@ -81,6 +81,7 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-dbmeter" spec="^2.1.0" />
     <plugin name="cordova-plugin-add-swift-support" spec="^1.7.2" />
+    <plugin name="cordova-plugin-fingerprint-aio" spec="^1.3.4" />
+    <plugin name="cordova-plugin-dbmeter" spec="^2.1.0" />
 </widget>

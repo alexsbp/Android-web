@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DbmeterPage } from "../dbmeter/dbmeter";
 import { ShakePage } from '../shake/shake';
+import { SensorerPage } from '../sensorer/sensorer';
 
 
 @Component({
@@ -12,11 +12,13 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
   }
 
-  DbMeter(){
-    this.navCtrl.push(DbmeterPage); 
-  }
+  
 Shake(){
   this.navCtrl.push(ShakePage);
 }
-  //heysoren 
+OpenSensorPage() {
+  this.navCtrl.push(SensorerPage);
+}
+
+
 }

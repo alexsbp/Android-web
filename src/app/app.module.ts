@@ -8,13 +8,17 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DbmeterPage } from "../pages/dbmeter/dbmeter";
 import { GeoFencePage } from "../pages/geo-fence/geo-fence";
+import { ShakePage } from '../pages/shake/shake';
+import { SensorerPage } from '../pages/sensorer/sensorer';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     DbmeterPage,
-    GeoFencePage
+    GeoFencePage,
+    SensorerPage,
+    ShakePage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { GeoFencePage } from "../pages/geo-fence/geo-fence";
     MyApp,
     HomePage,
     DbmeterPage,
-    GeoFencePage
+    GeoFencePage,
+    SensorerPage,
+    ShakePage
   ],
   providers: [
     StatusBar,
