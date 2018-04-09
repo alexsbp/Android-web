@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { GeoFencePage } from '../geo-fence/geo-fence';
-import { DBMeter } from '@ionic-native/db-meter';
+//import { DBMeter } from '@ionic-native/db-meter';
 
 
 /**
@@ -18,32 +17,27 @@ import { DBMeter } from '@ionic-native/db-meter';
 })
 export class DbmeterPage {
 
-  private subscription:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private dbMeter: DBMeter) {
-  }
-  OpenGeoFencePage() {
-    this.navCtrl.push(GeoFencePage);
+  //private subscription:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams/*, private dbMeter: DBMeter*/) {
   }
     
 
-  ionViewDidLoad() {
+  /*ionViewDidLoad() {
     console.log('ionViewDidLoad DbmeterPage');
     this.subscription = this.dbMeter.start().subscribe(
       data => console.log(data)
     );
 
   }
-  OpenDBMeterPage() {
-    this.navCtrl.push(DbmeterPage);
-  }
+ 
   OpenFingerPrintPage() {
-    
   }
-
-
 
   ionViewWillLeave() {
     this.subscription.unsubscribe();
-  }
+  }*/
+
+
+
 }
 
