@@ -13,6 +13,7 @@ import { DBMeter } from '@ionic-native/db-meter';
 @Component({
   selector: 'page-dbmeter',
   templateUrl: 'dbmeter.html',
+  
 })
 export class DbmeterPage {
 
@@ -23,7 +24,8 @@ export class DbmeterPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad DbmeterPage');
     this.subscription = this.dbMeter.start().subscribe(
-      data => console.log(data)
+    data => console.log(data)
+      
     );
   }
 
