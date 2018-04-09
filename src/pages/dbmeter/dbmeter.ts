@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the DbPage page.
+ * Generated class for the DbmeterPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-db',
-  templateUrl: 'db.html',
+  selector: 'page-dbmeter',
+  templateUrl: 'dbmeter.html',
 })
-export class DbPage {
+export class DbmeterPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DbPage');
+    console.log('ionViewDidLoad DbmeterPage');
   }
 
 }
