@@ -16,29 +16,19 @@ import { DBMeter } from '@ionic-native/db-meter';
 })
 export class DbmeterPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private dbMeter: DbmeterPage) {
+  private subscription:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private dbMeter: DBMeter) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DbmeterPage');
+    this.subscription = this.dbMeter.start().subscribe(
+      data => console.log(data)
+    );
   }
 
-  // Start listening
-let subscription = this.dbMeter.start().subscribe(
-  data => console.log(data)
-);
-
-// Check if we are listening
-this.dbMeter.isListening().then(
-  isListening => console.log(isListening)
-);
-
-// Stop listening
-subscription.unsubscribe();
-
-// Delete DBMeter instance from memory
-this.dbMeter.delete().then(
-  () => console.log('Deleted DB Meter instance'),
-  error => console.log('Error occurred while deleting DB Meter instance')
-
+  ionViewWillLeave() {
+    this.subscription.unsubscribe();
+  }
 }
+

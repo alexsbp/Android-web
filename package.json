@@ -27,6 +27,7 @@
     "@ionic-native/status-bar": "4.6.0",
     "@ionic/pro": "1.0.20",
     "@ionic/storage": "2.1.3",
+    "cordova-plugin-add-swift-support": "^1.7.2",
     "cordova-plugin-dbmeter": "^2.1.0",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
@@ -41,7 +42,8 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-dbmeter": {}
+      "cordova-plugin-dbmeter": {},
+      "cordova-plugin-add-swift-support": {}
     }
   }
 }
