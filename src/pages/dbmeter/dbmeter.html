@@ -7,12 +7,30 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>dbmeter</ion-title>
+    <ion-title>Sensorer</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-slides  pager="true" >
+      <ion-slide >
+          <!--<button ion-button (click) =""></button>-->
+          <h1 (click)="OpenDBMeterPage()">DB Meter page</h1>
+          
+        </ion-slide>
+      
+        <ion-slide >
+            <!--<button ion-button (click) =""></button>-->
+            <h1 (click)= "OpenGeoFencePage()">GeoFence page</h1>
+          </ion-slide>
+      
+          <ion-slide>
+              <!--<button ion-button (click) =""></button>-->
+              <h1>Shake page</h1>
+            </ion-slide>
+  </ion-slides>
+  
 
 </ion-content>

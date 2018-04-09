@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GeoFencePage } from '../geo-fence/geo-fence';
 
 /**
  * Generated class for the DbmeterPage page.
@@ -18,8 +19,16 @@ export class DbmeterPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DbmeterPage');
+  OpenGeoFencePage() {
+    this.navCtrl.push(GeoFencePage);
   }
+  OpenDBMeterPage() {
+    this.navCtrl.push(DbmeterPage);
+  }
+  OpenFingerPrintPage() {
+    //this.navCtrl.push();
+  }
+
+
 
 }

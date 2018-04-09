@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DbmeterPage } from "../pages/dbmeter/dbmeter";
+import { GeoFencePage } from "../pages/geo-fence/geo-fence";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    DbmeterPage
+    DbmeterPage,
+    GeoFencePage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { DbmeterPage } from "../pages/dbmeter/dbmeter";
   entryComponents: [
     MyApp,
     HomePage,
-    DbmeterPage
+    DbmeterPage,
+    GeoFencePage
   ],
   providers: [
     StatusBar,
