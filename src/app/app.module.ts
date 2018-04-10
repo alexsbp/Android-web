@@ -10,6 +10,8 @@ import { DbmeterPage } from "../pages/dbmeter/dbmeter";
 import { GeoFencePage } from "../pages/geo-fence/geo-fence";
 import { ShakePage } from '../pages/shake/shake';
 import { SensorerPage } from '../pages/sensorer/sensorer';
+import { Geofence } from '@ionic-native/geofence';
+import { DBMeter } from '@ionic-native/db-meter';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { SensorerPage } from '../pages/sensorer/sensorer';
   providers: [
     StatusBar,
     SplashScreen,
+    Geofence,
+    DBMeter,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
