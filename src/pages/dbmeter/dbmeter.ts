@@ -14,23 +14,40 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-dbmeter',
   templateUrl: 'dbmeter.html',
+  
 })
 export class DbmeterPage {
 
+<<<<<<< HEAD
   private subscription:any;
+=======
+  //private subscription:any;
+>>>>>>> 79d661add26825ece3a9b95525595e25a28ab7ba
   constructor(public navCtrl: NavController, public navParams: NavParams/*, private dbMeter: DBMeter*/) {
   }
+    
 
   /*ionViewDidLoad() {
     console.log('ionViewDidLoad DbmeterPage');
     this.subscription = this.dbMeter.start().subscribe(
-      data => console.log(data)
+    data => console.log(data)
+      
     );
+
+  }
+ 
+  OpenFingerPrintPage() {
   }
 
   ionViewWillLeave() {
     this.subscription.unsubscribe();
   }*/
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 79d661add26825ece3a9b95525595e25a28ab7ba
 }
 
 
