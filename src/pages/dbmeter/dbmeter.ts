@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DBMeter } from '@ionic-native/db-meter';
+//import { DBMeter } from '@ionic-native/db-meter';
+
 
 /**
  * Generated class for the DbmeterPage page.
@@ -17,10 +18,10 @@ import { DBMeter } from '@ionic-native/db-meter';
 export class DbmeterPage {
 
   private subscription:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private dbMeter: DBMeter) {
+  constructor(public navCtrl: NavController, public navParams: NavParams/*, private dbMeter: DBMeter*/) {
   }
 
-  ionViewDidLoad() {
+  /*ionViewDidLoad() {
     console.log('ionViewDidLoad DbmeterPage');
     this.subscription = this.dbMeter.start().subscribe(
       data => console.log(data)
@@ -29,6 +30,7 @@ export class DbmeterPage {
 
   ionViewWillLeave() {
     this.subscription.unsubscribe();
-  }
+  }*/
 }
+
 
