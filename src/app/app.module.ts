@@ -7,13 +7,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DbmeterPage } from "../pages/dbmeter/dbmeter";
-import { ShakePage } from "../pages/shake/shake";
+import { GeoFencePage } from "../pages/geo-fence/geo-fence";
+import { ShakePage } from '../pages/shake/shake';
+import { SensorerPage } from '../pages/sensorer/sensorer';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     DbmeterPage,
+    GeoFencePage,
+    SensorerPage,
     ShakePage
   ],
   imports: [
@@ -25,6 +29,8 @@ import { ShakePage } from "../pages/shake/shake";
     MyApp,
     HomePage,
     DbmeterPage,
+    GeoFencePage,
+    SensorerPage,
     ShakePage
   ],
   providers: [
