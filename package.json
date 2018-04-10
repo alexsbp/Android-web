@@ -29,10 +29,6 @@
     "@ionic-native/status-bar": "4.6.0",
     "@ionic/pro": "1.0.20",
     "@ionic/storage": "2.1.3",
-<<<<<<< HEAD
-=======
-    "cordova-plugin-dbmeter": "^2.1.0",
->>>>>>> 79d661add26825ece3a9b95525595e25a28ab7ba
     "cordova-plugin-fingerprint-aio": "^1.3.4",
     "cordova-plugin-shake": "^0.6.0",
     "ionic-angular": "3.9.2",
