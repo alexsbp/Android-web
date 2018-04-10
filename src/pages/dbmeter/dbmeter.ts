@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-dbmeter',
   templateUrl: 'dbmeter.html',
+  
 })
 export class DbmeterPage {
 
@@ -25,7 +26,8 @@ export class DbmeterPage {
   /*ionViewDidLoad() {
     console.log('ionViewDidLoad DbmeterPage');
     this.subscription = this.dbMeter.start().subscribe(
-      data => console.log(data)
+    data => console.log(data)
+      
     );
 
   }
