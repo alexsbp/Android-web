@@ -13,6 +13,12 @@ import { SensorerPage } from '../pages/sensorer/sensorer';
 import { Geofence } from '@ionic-native/geofence';
 import { DBMeter } from '@ionic-native/db-meter';
 
+//chat pages
+import { SignInPage } from '../pages/sign-in/sign-in';
+import { RoomPage } from '../pages/room/room';
+import { AddRoomPage } from '../pages/add-room/add-room';
+import { HomeChatPage } from '../pages/home-chat/home-chat';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -20,7 +26,11 @@ import { DBMeter } from '@ionic-native/db-meter';
     DbmeterPage,
     GeoFencePage,
     SensorerPage,
-    ShakePage
+    ShakePage,
+    SignInPage,
+    RoomPage,
+    AddRoomPage,
+    HomeChatPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +43,11 @@ import { DBMeter } from '@ionic-native/db-meter';
     DbmeterPage,
     GeoFencePage,
     SensorerPage,
-    ShakePage
+    ShakePage,
+    SignInPage,
+    RoomPage,
+    AddRoomPage,
+    HomeChatPage 
   ],
   providers: [
     StatusBar,
