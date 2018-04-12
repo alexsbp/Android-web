@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddRoomPage } from '../add-room/add-room';
-import { HomePage } from '../home/home';
 import { HomeChatPage } from '../home-chat/home-chat';
 import * as firebase from 'Firebase';
 
@@ -48,8 +47,8 @@ export class RoomPage
   ionViewDidLoad() 
   {
     console.log('ionViewDidLoad RoomPage');
-  }
 
+  }
 }
 
 //converting Firebase response to an array.
