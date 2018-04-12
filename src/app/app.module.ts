@@ -11,6 +11,8 @@ import { GeoFencePage } from "../pages/geo-fence/geo-fence";
 import { ShakePage } from '../pages/shake/shake';
 import { SensorerPage } from '../pages/sensorer/sensorer';
 
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,7 +20,7 @@ import { SensorerPage } from '../pages/sensorer/sensorer';
     DbmeterPage,
     GeoFencePage,
     SensorerPage,
-    ShakePage
+    ShakePage,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { SensorerPage } from '../pages/sensorer/sensorer';
   providers: [
     StatusBar,
     SplashScreen,
+    FingerprintAIO,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
