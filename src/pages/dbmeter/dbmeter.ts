@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-//import { DBMeter } from '@ionic-native/db-meter';
+import { DBMeter } from '@ionic-native/db-meter';
 
 
 /**
@@ -12,34 +12,38 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-dbmeter',
+  selector: 'page-dbmeter', 
   templateUrl: 'dbmeter.html',
   
 })
 export class DbmeterPage {
 
-  //private subscription:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams/*, private dbMeter: DBMeter*/) {
-  }
-    
+  subscription:any;
+  currentAmplitude: any;  
+  constructor(public navCtrl: NavController, public navParams: NavParams, private dbMeter: DBMeter) 
+  {
 
-  /*ionViewDidLoad() {
-    console.log('ionViewDidLoad DbmeterPage');
-    this.subscription = this.dbMeter.start().subscribe(
-    data => console.log(data)
-      
+    let subscription = this.dbMeter.start().subscribe
+    (
+      data => this.currentAmplitude = data
     );
 
+    // Check if we are listening
+    this.dbMeter.isListening().then
+    (
+      isListening => console.log(isListening)
+    );
+
+    // Stop listening
+    subscription.unsubscribe();
+
+    // Delete DBMeter instance from memory
+    this.dbMeter.delete().then
+    (
+      () => console.log('Deleted DB Meter instance'),
+      error => console.log('Error occurred while deleting DB Meter instance')
+    );
   }
- 
-  OpenFingerPrintPage() {
-  }
-
-  ionViewWillLeave() {
-    this.subscription.unsubscribe();
-  }*/
-
-
 
 }
 
