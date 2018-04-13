@@ -34,15 +34,20 @@ export class DbmeterPage {
       isListening => console.log(isListening)
     );
 
-    // Stop listening
-    subscription.unsubscribe();
+    
 
-    // Delete DBMeter instance from memory
-    this.dbMeter.delete().then
-    (
-      () => console.log('Deleted DB Meter instance'),
-      error => console.log('Error occurred while deleting DB Meter instance')
-    );
+    //subscription.unsubscribe(); 
+  }
+
+  DeleteDBMeter()
+  {
+     // Delete DBMeter instance from memory
+     this.dbMeter.delete().then
+     (
+       () => console.log('Deleted DB Meter instance'),
+       error => console.log('Error occurred while deleting DB Meter instance')
+     );
+
   }
 
 }

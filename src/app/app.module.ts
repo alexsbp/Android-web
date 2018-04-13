@@ -29,13 +29,10 @@ import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
     GeoFencePage,
     SensorerPage,
     ShakePage,
-<<<<<<< HEAD
-=======
     SignInPage,
     RoomPage,
     AddRoomPage,
     HomeChatPage
->>>>>>> d39220dc752ef8683b01f6ce38e00f7e4db40aba
   ],
   imports: [
     BrowserModule,
@@ -57,12 +54,9 @@ import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
   providers: [
     StatusBar,
     SplashScreen,
-<<<<<<< HEAD
     FingerprintAIO,
-=======
     Geofence,
     DBMeter,
->>>>>>> d39220dc752ef8683b01f6ce38e00f7e4db40aba
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

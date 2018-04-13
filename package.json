@@ -21,6 +21,7 @@
     "@angular/http": "5.2.9",
     "@angular/platform-browser": "5.2.9",
     "@angular/platform-browser-dynamic": "5.2.9",
+    "@ionic-native/android-fingerprint-auth": "^4.7.0",
     "@ionic-native/core": "^4.6.0",
     "@ionic-native/db-meter": "^4.7.0",
     "@ionic-native/fingerprint-aio": "^4.7.0",
@@ -56,8 +57,10 @@
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project",
-  "cordova": {
-    "plugins": {
+  "cordova": 
+  {
+    "plugins": 
+    {
       "cordova-plugin-shake": {},
       "cordova-plugin-fingerprint-aio": {},
       "cordova-plugin-geofence": {},
@@ -67,10 +70,16 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
+
+      "cordova-plugin-add-swift-support": {},
+      "cordova-plugin-inappbrowser": {}
+    },
+    "platforms": [],
+
       "cordova-plugin-add-swift-support": {}
     },
     "platforms": [
       "android"
     ]
   }
-}
+
