@@ -19,6 +19,8 @@ import { RoomPage } from '../pages/room/room';
 import { AddRoomPage } from '../pages/add-room/add-room';
 import { HomeChatPage } from '../pages/home-chat/home-chat';
 
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,10 +29,13 @@ import { HomeChatPage } from '../pages/home-chat/home-chat';
     GeoFencePage,
     SensorerPage,
     ShakePage,
+<<<<<<< HEAD
+=======
     SignInPage,
     RoomPage,
     AddRoomPage,
     HomeChatPage
+>>>>>>> d39220dc752ef8683b01f6ce38e00f7e4db40aba
   ],
   imports: [
     BrowserModule,
@@ -52,8 +57,12 @@ import { HomeChatPage } from '../pages/home-chat/home-chat';
   providers: [
     StatusBar,
     SplashScreen,
+<<<<<<< HEAD
+    FingerprintAIO,
+=======
     Geofence,
     DBMeter,
+>>>>>>> d39220dc752ef8683b01f6ce38e00f7e4db40aba
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

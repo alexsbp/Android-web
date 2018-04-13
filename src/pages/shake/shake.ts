@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-//import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 
 /**
  * Generated class for the ShakePage page.
@@ -16,13 +16,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ShakePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams/*, private faio: FingerprintAIO*/) {
+  private subscription:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private faio: FingerprintAIO) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ShakePage');
+    this.dondon();
   }
-/*dondon(){
+dondon(){
   this.faio.show({
     clientId: 'Fingerprint-Demo',
     clientSecret: 'password', //Only necessary for Android
@@ -32,7 +34,7 @@ export class ShakePage {
   })
   .then((result: any) => console.log(result))
   .catch((error: any) => console.log(error));
-}*/
+}
   
 }
   
