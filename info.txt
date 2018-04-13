@@ -1,3 +1,9 @@
+Node version: v8.11.1
+
+Cordova version: 7.1.0
+
+Config.xml file: 
+
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>AndroidWeb</name>
@@ -12,7 +18,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="ScrollEnabled" value="false" />
-    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
@@ -78,8 +84,6 @@
     </platform>
     <allow-navigation href="http://192.168.0.111:8100" />
     <allow-navigation href="http://192.168.56.1:8100" />
-    <allow-navigation href="http://localhost:8100" />
-    <allow-navigation href="http://192.168.43.52:8100" />
     <plugin name="cordova-plugin-shake" spec="^0.6.0" />
     <plugin name="cordova-plugin-fingerprint-aio" spec="^1.3.4" />
     <plugin name="cordova-plugin-geofence" spec="^0.7.0" />
@@ -89,6 +93,24 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.2.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <allow-navigation href="http://localhost:8100" />
     <plugin name="cordova-plugin-add-swift-support" spec="^1.7.2" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^2.0.2" />
+    <allow-navigation href="http://192.168.43.52:8100" />
 </widget>
+
+
+Plugins: 
+
+cordova-plugin-add-swift-support,cordova-plugin-compat,cordova-plugin-dbmeter,cordova-plugin-device,cordova-plugin-device-motion,cordova-plugin-geofence,cordova-plugin-ionic-keyboard,cordova-plugin-ionic-webview,cordova-plugin-shake,cordova-plugin-splashscreen,cordova-plugin-whitelist,es6-promise-plugin
+
+Error retrieving Android platform information: 
+Android SDK is not set up properly. Make sure that the Android SDK 'tools' and 'platform-tools' directories are in the PATH variable. 
+
+Error: cmd: Command failed with exit code 1 Error output:
+'android' is not recognized as an internal or external command,
+operable program or batch file.
+
+Error retrieving iOS platform information: Error: cmd: Command failed with exit code 1 Error output:
+'xcodebuild' is not recognized as an internal or external command,
+operable program or batch file.
+
